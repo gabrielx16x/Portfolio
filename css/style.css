@@ -1,0 +1,139 @@
+@media (max-width: 767px) {
+   
+    body {
+    
+      background-image: url(../img/background.png);
+      font-family: 'Comic Sans MS', Comic Sans, cursive;
+      font-size: 12px;
+      
+    }
+    hr{
+        color: purple;
+    }
+    ul {
+        justify-content: center;
+        display: grid;
+        align-items: center;
+        text-align: left;
+      }
+    
+    .imagem {
+        max-width: 100%; 
+        height: auto; 
+        width: 200px;
+        position: absolute;
+        display: grid;
+        justify-content: space-around;
+
+      }
+    
+    .titulo {
+      margin-left: 10px;
+    }
+    .btn1 {
+   
+      margin-right: 5px; 
+    }
+ 
+    h2, h1, h4, h3 {
+      margin-right: 0; 
+    }
+  }
+  
+@media (min-width: 768px) {
+    body {
+ 
+      background-image: url(../img/background.png);
+      font-family: 'Comic Sans MS', Comic Sans, cursive;
+    }
+    ul {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: left;
+      }
+    .imagem {
+        max-width: 100%; 
+        height: auto;
+
+      }
+    .titulo {
+      margin-left: 473px;
+    }
+    .btn1 {
+      margin-left: 800px;
+      
+    }
+  
+    h2, h1, h4, h3 {
+      margin-right: 200px; 
+    }
+  }
+  
+
+a {
+    text-decoration: none;
+  }
+  
+button {
+    border: 2px solid aliceblue;
+    border-radius: 3px;
+    font-size: medium;
+    border-color: purple;
+    font-family: 'Comic Sans MS', Comic Sans, cursive;
+    padding: 5px;
+    background-color: pink;
+  }
+  
+.divbutton {
+    text-align: center;
+  }
+  
+li {
+    list-style-type: none;
+  }
+  
+
+hr{
+    border-color: purple;
+}
+  
+.texto {
+        opacity: 0;
+        white-space: nowrap; 
+        overflow: hidden;
+        animation-name: aparecer-desaparecer; 
+        animation-duration: 3s; 
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      
+      
+      @keyframes aparecer-desaparecer {
+        0% {
+          opacity: 0; 
+          transform: translateX(-100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0); 
+        }
+      
+      }
+
+.imagem {
+    opacity: 0; 
+    animation-name: aparecer; 
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: forwards; 
+  }
+  
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
